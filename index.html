@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icon-round.png">
+    <title>Iron Mine</title>
+</head>
+<body>
+    <section class=""><div class="space"></div></section>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">IronMine</a>
+            <nav class="header-nav">
+                <ul>
+                    <li class="header-nav-link"><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li class="header-nav-link"><a href="https://vk.com/ironpe" target="_blank">МЫ ВКОНТАКТЕ</a></li>
+                    <li class="header-nav-link"><a href="https://discord.com/invite/VkS4fyZd2V" target="_blank">ДРУГАЯ СВЯЗЬ С НАМИ</a></li>
+                    <li class="header-nav-link"><a href="#donation">ОПИСАНИЕ ДОНАТА</a></li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <span></span>
+            </div>
+            <a href="minecraft://?addExternalServer=IronMine|IronMine.fun:19132" class="header-btn btn">Начать играть</a>
+        </div>
+    </header>
+    <section class="info">
+        <div class="container">
+
+            <div class="donation">
+                <p class="donation-title">Покупка доната</p>
+                <div class="donation-field">
+                    <label>Никнейм <span class="text-danger">*</span></label>
+                    <input type="text" class="donation-field-input" placeholder="Никнейм на сервере" id="username" name="username" required>
+                </div>
+                <div class="donation-field">
+                    <label>Купон</label>
+                    <input type="text" class="donation-field-input" placeholder="Купон (при наличии)" id="ticket" name="ticket">
+                </div>
+                <div class="donation-field">
+                    <label>Сервер</label>
+                    <select class="select donation-field-input" id="server" name="server">
+                        <option value="server1">Гриферское выживание</option>
+                    </select>
+                </div>
+                <div class="donation-field">
+                    <label>Донат</label>
+                    <select class="select donation-field-input" id="product1" name="product1">
+                        <option value="product1-0" selected disabled>Выберите донат</option>
+                        <option value="product1-1">Флай — 9 руб.</option>
+                        <option value="product1-2">Вип — 19 руб.</option>
+                        <option value="product1-3">Премиум — 29 руб.</option>
+                        <option value="product1-4">Креатив — 39 руб.</option>
+                        <option value="product1-5">Делюкс — 49 руб.</option>
+                        <option value="product1-6">Страж — 79 руб.</option>
+                        <option value="product1-7">Оператор — 129 руб.</option>
+                        <option value="product1-8">Бог — 169 руб.</option>
+                        <option value="product1-9">Ультра — 199 руб.</option>
+                        <option value="product1-10">Легенда — 299 руб.</option>
+                        <option value="product1-11">Император — 499 руб.</option>
+                        <option value="product1-12">Спонсор — 999 руб.</option>
+                        <option value="product1-13">Повелитель — 1499 руб.</option>
+                        <option value="product1-14">Айрон — 1999 руб.</option>
+                        <option value="product1-16">Донат-кейс — 79 руб.</option>
+                        <option value="product1-17">Донат-рулетка — 10 руб.</option>
+                        <option value="product1-18">Любой донат-префикс навсегда — 749 руб.</option>
+                        <option value="product1-19">Разбан — 99 руб.</option>
+                        <option value="product1-20">Донат-валюта (коины) — 1 руб.</option>
+                        <option value="product1-21">Игровая валюта ($) — 1 руб.</option>
+                    </select> 
+                </div>
+                <p class="donation-agree">Нажимая кнопку оплатить, вы автоматически соглашаетесь с <a class='donation-agree-link' href="agree.html">пользовательским соглашением</a>.</p>
+                <button id="sumbitpay" class="btn donation-btn">Оплатить</button>
+            </div>
+
+            <div class="server-info">
+                <h1 class="server-info-title">IronMine - Проект серверов Minecraft: BE</h1>
+                <!-- <p class="server-info-text">Лучший игровой сервер по Выживанию, с Анархией и SkyWars в Minecraft PE/BE. 
+                    У нас есть всё о чём Вы только могли представлять. Присоединяйся! 🚀</p> -->
+                    <p class="server-info-text">Самые честные и крутые сервера в Minecraft: BE!
+                        <br>У нас ты сможешь отдохнуть от прошедшего дня, весело проведя время! Создать свой клан и захватить весь сервер, пройти в топы или загриферить чужую базу — только у нас!
+                        Мы реализовали все то, о чем вы лишь могли мечтать! Присоединяйся!</p>
+                <a href="minecraft://?addExternalServer=IronMine|IronMine.fun:19132" class="server-info-btn btn">Начать играть</a>
+                    <!-- 🚀 Самые честные и крутые сервера в Minecraft: BE!
+                    У нас ты сможешь отдохнуть от прошедшего дня, весело проведя время! Создать свой клан и захватить весь сервер, пройти в топы или загриферить чужую базу — только у нас!
+                    Мы реализовали все то, о чем вы лишь могли мечтать! Присоединяйся! -->
+                <div class="server-info-card">
+                    <div class="card-img">
+                        <img class="card-icon"src="images/db.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p class="card-text-ip">IronMine.fun:19132</p>
+                        <p class="card-text-online">Онлайн: много игроков</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="desc" id="donation">
+        <div class="container">
+            <div class="desc-block">                
+                    <div class="desc-list">
+                        <div class="desc-title"><p>Описание доната</p></div>
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list10">
+                            <p class="list__inner-text">Флай — 9 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint10">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br>    - /fly - включить режим полёта.
+                            <br>    - У вас будет префикс: [Флай].
+                            <br>    > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list11">
+                            <p class="list__inner-text">Вип — 19 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint11">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br> - /back - вернуться на место смерти
+                            <br> - /repair - починить предмет в руке.
+                            <br> - /pinfo - узнать информацию об игроке.
+                            <br> - У вас будет префикс: [Вип]
+                            <br> > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list12">
+                            <p class="list__inner-text">Премиум — 29 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint12">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br> - /heal - восстановить здоровье и голод
+                            <br> - /firework - фейерверки
+                            <br> - /god - режим бога
+                            <br> - У вас будет префикс: [Премиум]
+                            <br> > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list13">
+                            <p class="list__inner-text">Креатив — 39 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint13">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br> - /gm - режим креатива
+                            <br> - /top - телепорт в облака
+                            <br> - /clear - очистка инвентаря
+                            <br> - У вас будет префикс: [Креатив]
+                            <br> > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list14">
+                            <p class="list__inner-text">Делюкс — 49 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint14">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br> - /size - изменить размер скина
+                            <br> - /milk - снять с себя все эффекты
+                            <br> - /jump - мощный прыжок
+                            <br> - У вас будет префикс: [Делюкс]
+                            <br> > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list15">
+                            <p class="list__inner-text">Страж — 79 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint15">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br> - /a - чат донатеров
+                            <br> - /seen - последняя сессия игрока
+                            <br> - /tp - телепорт к игроку
+                            <br> - У вас будет префикс: [Страж]
+                            <br> > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list16">
+                            <p class="list__inner-text">Оператор — 129 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint16">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br> - /cc - очистить чат
+                            <br> - /vanish - невидимость
+                            <br> - /fakeop /fakedeop - фейковая опка
+                            <br> - /speed - изменение скорости
+                            <br> - У вас будет префикс: [Оператор].
+                            <br> > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list17">
+                            <p class="list__inner-text">Бог — 169 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint17">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br> - /prefix - префикс
+                            <br> - /shock - удар молнией
+                            <br> - /ap - съесть золотое яблоко не имея его
+                            <br> - /btop - телепорт на самый верхний блок над вами
+                            <br> - У вас будет префикс: [Бог]
+                            <br> > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list18">
+                            <p class="list__inner-text">Ультра — 199 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint18">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br> - /particle - партиклы
+                            <br> - /say - оповещение на весь сервер
+                            <br> - /day /night - день/ночь
+                            <br> - /ptime - кастомное время (день или ночь)
+                            <br> - У вас будет префикс: [Ультра]
+                            <br> > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list19">
+                            <p class="list__inner-text">Легенда — 299 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint19">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br> - /console - консоль
+                            <br> - /flood - флуд чата игроку
+                            <br> - /tptoggle - запретить тп к себе
+                            <br> - /ext - потушить себя
+                            <br> - У вас будет префикс: [Легенда]
+                            <br> > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list20">
+                            <p class="list__inner-text">Император — 499 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint20">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br> - /freeze /unfreeze - заморозка / разморозка игроков
+                            <br> - /pumpkin - одеть тыкву на игрока
+                            <br> - /near - игроки рядом
+                            <br> - /fakepay - фейковый перевод денег
+                            <br> - У вас будет префикс: [Император]
+                            <br> > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list21">
+                            <p class="list__inner-text">Спонсор — 999 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint21">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br> - /potato - заполнить инвентарь игрока картошкой
+                            <br> - /launch - подбросить игрока
+                            <br> - /fire - поджечь игрока
+                            <br> - //wedit - ворлд-эдит (сет)
+                            <br> - У вас будет префикс: [Спонсор]
+                            <br> > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list22">
+                            <p class="list__inner-text">Повелитель — 1499 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint22">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br> - /srvstat - посмотреть нагрузку на сервер
+                            <br> - /god-ench - чары бога на предмет
+                            <br> - /cleardrop - очистка дропа
+                            <br> - /nv - ночное зрение
+                            <br> - На вас не действует анти-спам
+                            <br> - Вы обладатель почти последней привилегии, что помогает легко отличать вас
+                            <br> - У вас будет префикс: [Повелитель]
+                            <br> > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list23">
+                            <p class="list__inner-text">Айрон — 1999 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint23">
+                            <p class="list__hint-text">
+                                * Все возможности предыдущих привилегий!
+                            <br>* Самый крутой донат на сервере!
+                            <br> - /ban - забанить игрока
+                            <br> - /unban - разбанить игрока
+                            <br> - /kick - кикнуть игрока
+                            <br> - /mute - замутить игрока
+                            <br> - /unmute - размутить игрока
+                            <br> - /warn - дать варн игроку
+                            <br> - /unwarn - снять варн игроку
+                            <br> - /allsay - оповещение на весь сервер и в чат, и на экран и над инвентарем.
+                            <br> - /cape - плащи
+                            <br> - /nearby - игроки рядом с игроком
+                            <br> - Ваш ник выделен зелёным цветом, что помогает легко отличать вас
+                            <br> - Вашу информацию нельзя получить через /pinfo
+                            <br> - Вашу позицию нельзя получить через /getpos
+                            <br> - У вас будет префикс: [Айрон]
+                            <br> > Остается после вайпа!
+                            </p>
+                        </div>                          
+                    </div>
+
+                </div>
+                <div class="desc-list">
+                    <div class="desc-title"><p>Описание кейсов</p></div>
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list40">
+                            <p class="list__inner-text">Донат-кейс — 79 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint40">
+                            <p class="list__hint-text">
+                                     - Выпадает: привилегии от Премиум до Спонсор
+                                <br> * Открыть кейс можно на спавне.
+                                <br> > Если вы решили открыть кейс позже и прошел вайп, то после вайпа он не пропадет.
+                            </p>
+                        </div>                          
+                    </div>
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list41">
+                            <p class="list__inner-text">Донат-рулетка  — 10 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint41">
+                            <p class="list__hint-text">
+                                Прежде чем покупать, прочтите это.
+                                <br> Донат-рулетка это не донат-кейс, она открывается прямо на сайте.
+                                <br> ВАЖНО! Донат-рулетка не присылает вам уведомление о том, что вам выпало.
+                                <br> 
+                                <br> Может выпасть:
+                                <br> - привилегия Айрон (1999р) 1% шанс
+                                <br> - привилегия Флай (9р) 19% шанс
+                                <br> - привилегия Вип (19р) 10% шанс
+                                <br> - привилегия Премиум (29р) 15% шанс
+                                <br> - привилегия Креатив (39р) 17% шанс
+                                <br> - 10,000$ игровой валюты (10р) 15% шанс
+                                <br> - 100,000$ игровой валюты (100р) 3% шанс
+                                <br> - 5,000$ игровой валюты (5р) 7% шанс
+                                <br> - 20,000$ игровой валюты (20р) 13% шанс
+                            </p>
+                        </div>                          
+                    </div>
+                </div>
+
+                <div class="desc-list">
+                    <div class="desc-title"><p>Описание дополнительных услуг</p></div>
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list50">
+                            <p class="list__inner-text">Разбан — 99 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint50">
+                            <p class="list__hint-text">
+                                - Разбан по никнейму на сервере
+                            </p>
+                        </div>                          
+                    </div>
+                    <div class="desc_item">                        
+                        <div class="list__inner-item" onclick='displayHint(this.id)' id="list51">
+                            <p class="list__inner-text">Донат-рулетка  — 10 рублей</p>
+                        </div>
+                        <div class="list__inner-hint" id="hint51">
+                            <p class="list__hint-text">
+                                Покупка любого донат-префикса, который вы напишете, навсегда.
+                                <br> Активировать префикс можно на сервере, используя /dprefix on.
+                                <br> За префиксы "Хелпер", "Администратор", "Создатель" и т.п. администрация имеет право заменить их на любой, который придумает.
+                                <br>  В поле нужно писать префикс без скобок, например §l§bПрефикс
+                            </p>
+                        </div>                          
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-text">
+                <p class="footer-name">© 2024 IronMine - все права защищены.</p>
+                <p class="footer-name"><a href="https://vk.com/ironpe" target="_blank" class="footer-link">VK</a> | <a href="agree.html" class="footer-link">Соглашение</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script src="js/script.js"></script>
+</html>
